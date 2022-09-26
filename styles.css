@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #9285A6;
+}
+
+body * {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 160%;
+}
+
+header {
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #956BB1 28.65%, #BEA2DD 56.77%, #D6C2F2 84.38%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 580px; 
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+    border: 3px solid #D6C2F2;
+}
+
+section ul {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.kdrama-list img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.actor-list img {
+    width: 100px;
+    border-radius: 16px;
+}
+
+.currently-watching img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/*animation*/
+
+header div {
+    animation: fromTop .7s .2s backwards;
+}
+
+main section:nth-child(1) {
+    animation: fromLeft .7s .2s backwards;
+}
+
+main section:nth-child(2) {
+    animation: fromRight .7s .4s backwards;
+}
+
+main section:nth-child(3) {
+    animation: fromLeft .7s .6s backwards;
+}
+
+main section:nth-child(4) {
+    animation: fromRight .7s .8s backwards;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
