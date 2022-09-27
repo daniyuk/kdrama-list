@@ -1,6 +1,6 @@
 # KDRAMA LIST
 
-
+![preview](./.github/preview.png)
 
 ## Descrição 
 
