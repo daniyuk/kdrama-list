@@ -8,6 +8,7 @@ Projeto construído baseado no projeto desenvolvido no evento Next Level Week da
 
 Um dos desafios proposto pelos instrutores foi editar o projeto feito para algo que gostamos. Portanto, criei esse projeto com a relação de doramas que mais gosto, também, atores e atrizes que acompanho e o que estou assistindo agora.
 
+🔗 [Clique aqui para acessar](https://daniyuk.github.io/kdrama-list/)
 
 ## Status
 > ⛅ Projeto em construção ⛅
