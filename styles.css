@@ -46,7 +46,7 @@ header div img {
 }
 
 main {
-    max-width: 580px; 
+    max-width: 480px; 
     width: 90%;
     margin: 32px auto;
     display: grid;
@@ -159,4 +159,14 @@ main section:nth-child(4) {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* swiper */
+section {
+    overflow: hidden;
+}
+
+section .swiper-wrapper{
+    flex-wrap: nowrap;
+    gap: 0;
 }

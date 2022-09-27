@@ -13,6 +13,12 @@
 
         <link rel="stylesheet" href="./styles.css">
 
+        <!-- Link Swiper's CSS -->
+        <link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+
     </head>
 
     <body>      
@@ -29,26 +35,37 @@
                     <h2>Meus doramas</h2>
                     <p>Os doramas que mais gostei de assistir!</p>
 
-                    <ul class="kdrama-list">
-                        <li>
-                            <a target="_blank" href="https://mydramalist.com/16589-w">
-                                <img src="https://i.mydramalist.com/6wjE0_4c.jpg?v=1" alt="Capa de W Two Worlds">
-                            </a>
-                        </li>
+                    <div class="swiper mySwiper">
 
-                        <li>
-                            <a target="_blank" href="https://mydramalist.com/19262-weightlifting-fairy-kim-bok-joo">
-                                <img src="https://i.mydramalist.com/D2X7Dc.jpg?v=1" alt="Capa de Fada do Levantamento de Peso">
-                            </a>
-                        </li>
+                        <ul class="kdrama-list swiper-wrapper">
 
-                        <li>
-                            <a target="_blank" href="https://mydramalist.com/22472-fight-for-my-way">
-                                <img src="https://i.mydramalist.com/nv0kQc.jpg?v=1" alt="Capa de Lutando pelo meu caminho">
-                            </a>
-                        </li>
-                       
-                    </ul>
+                            <li class="swiper-slide">
+                                <a target="_blank" href="https://mydramalist.com/16589-w">
+                                    <img src="https://i.mydramalist.com/6wjE0_4c.jpg?v=1" alt="Capa de W Two Worlds">
+                                </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a target="_blank" href="https://mydramalist.com/19262-weightlifting-fairy-kim-bok-joo">
+                                    <img src="https://i.mydramalist.com/D2X7Dc.jpg?v=1" alt="Capa de Fada do Levantamento de Peso">
+                                </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a target="_blank" href="https://mydramalist.com/22472-fight-for-my-way">
+                                    <img src="https://i.mydramalist.com/nv0kQc.jpg?v=1" alt="Capa de Lutando pelo meu caminho">
+                                </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a target="_blank" href="https://mydramalist.com/33768-july-found-by-chance">
+                                    <img src="https://i.mydramalist.com/E24zpc.jpg?v=1" alt="Capa de Extraordinária Você">
+                                </a>
+                            </li>
+                        
+                        </ul>
+
+                    </div> 
 
                 </div>
             </section>
@@ -58,14 +75,19 @@
                     <h2>Atores e atrizes</h2>
                     <p>Meus artistas favoritos!</p>
 
-                    <ul class="actor-list">
-                        <li>
-                            <a target="_blank" href="https://mydramalist.com/people/900-lee-jong-suk">
-                                <img src="https://i.mydramalist.com/eLBmQ_5c.jpg" alt="Foto do Lee Jong Suk">
-                            </a>
-                        </li>
+                    <div class="swiper mySwiper">
 
-                    </ul>
+                        <ul class="actor-list swiper-wrapper">
+
+                            <li class="swiper-slide">
+                                <a target="_blank" href="https://mydramalist.com/people/900-lee-jong-suk">
+                                    <img src="https://i.mydramalist.com/eLBmQ_5c.jpg" alt="Foto do Lee Jong Suk">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
 
                 </div>
             </section>
@@ -75,13 +97,19 @@
                     <h2>Assistindo</h2>
                     <p>Doramas que estou assistindo agora!</p>
 
-                    <ul class="currently-watching">
-                        <li>
-                            <a target="_blank" href="https://mydramalist.com/695963-tomorrow">
-                                <img src="https://i.mydramalist.com/qjBQ2_4c.jpg?v=1" alt="Capa de Amanhã">
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="swiper mySwiper">
+
+                        <ul class="currently-watching swiper-wrapper">
+
+                            <li class="swiper-slide">
+                                <a target="_blank" href="https://mydramalist.com/695963-tomorrow">
+                                    <img src="https://i.mydramalist.com/qjBQ2_4c.jpg?v=1" alt="Capa de Amanhã">
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
 
                 </div>
             </section>
@@ -113,6 +141,7 @@
                         </li>
 
                     </ul>
+
                 </div>
             </section>
 
@@ -123,6 +152,16 @@
             <br>
             
         </footer>
+
+         <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            new Swiper(".mySwiper", {
+                slidesPerView: 3
+            });
+        </script>
 
     </body>
 
